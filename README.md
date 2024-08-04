@@ -15,4 +15,4 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 ## Things of Note
 
-TBA
+- [How to use PolyPost.Resource](https://github.com/totemic-tools/poly_post_demo/blob/main/lib/demo/article.ex)
