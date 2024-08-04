@@ -20,7 +20,7 @@ config :demo, DemoWeb.Endpoint,
     layout: false
   ],
   pubsub_server: Demo.PubSub,
-  live_view: [signing_salt: "PGxErDQW"]
+  live_view: [signing_salt: "YrQjEkqH"]
 
 # Configures the mailer
 #
