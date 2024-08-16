@@ -10,8 +10,8 @@ defmodule Article do
   def build(reference, metadata, body) do
     %__MODULE__{
       key: reference,
-      title: get_in(metadata, [:title]),
-      author: get_in(metadata, [:author]),
+      title: get_in(metadata, ["title"]),
+      author: get_in(metadata, ["author"]),
       body: body
     }
   end
