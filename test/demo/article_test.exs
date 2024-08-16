@@ -4,7 +4,7 @@ defmodule ArticleTest do
   @filename "my_article.md"
   @title "My Article"
   @author "Me"
-  @metadata [title: @title, author: @author]
+  @metadata %{"title" => @title, "author" => @author}
   @body "This is my article."
 
   describe ".build/3" do
