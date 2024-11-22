@@ -1,0 +1,11 @@
+<ul>
+  <%= for item <- @items do %>
+  <li class="flex flex-row gap-2 py-2 sm:py-0">
+    <time class="break-keep text-slate-600 sm:inline-block hidden"><%= item.date %></time>
+    <div>
+      <.link navigate={item.path}><%= item.title %></.link>
+      <span class="flex text-sm text-slate-600 sm:hidden inline"><%= item.date %></span>
+    </div>
+  </li>
+  <% end %>
+</ul>

@@ -82,6 +82,10 @@ config :phoenix_live_view,
 config :swoosh, :api_client, false
 
 config :poly_post, :resources,
+  front_matter: [decoder: {YamlElixir, :read_from_string, []}],
   content: [
-    articles: {Article, {:path, File.cwd!() |> Path.join("priv/articles/*.md")}}
+    articles: [
+      module: Article,
+      path: File.cwd!() |> Path.join("priv/articles/*.md")
+    ]
   ]

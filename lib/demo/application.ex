@@ -20,7 +20,8 @@ defmodule Demo.Application do
       # Start a worker by calling: Demo.Worker.start_link(arg)
       # {Demo.Worker, arg},
       # Start to serve requests, typically the last entry
-      DemoWeb.Endpoint
+      DemoWeb.Endpoint,
+      build_content_task()
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
@@ -40,5 +41,9 @@ defmodule Demo.Application do
   defp skip_migrations?() do
     # By default, sqlite migrations are run when using a release
     System.get_env("RELEASE_NAME") != nil
+  end
+
+  defp build_content_task do
+    {Task, fn -> PolyPost.build_and_store_all!() end}
   end
 end

@@ -1,0 +1,11 @@
+<ul>
+  <%= for article <- @articles do %>
+  <li class="flex flex-row gap-2 py-2 sm:py-0">
+    <time class="break-keep text-slate-600 sm:inline-block hidden"><%= article.date %></time>
+    <div>
+      <.link navigate={~p"/articles/#{article.key}"}><%= article.title %></.link>
+      <span class="flex text-sm text-slate-600 sm:hidden inline"><%= article.date %></span>
+    </div>
+  </li>
+  <% end %>
+</ul>
