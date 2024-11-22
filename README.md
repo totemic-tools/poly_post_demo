@@ -28,4 +28,8 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser an
 
 ## Things of Note
 
-- [How to use PolyPost.Resource](https://github.com/totemic-tools/poly_post_demo/blob/main/lib/demo/article.ex)
+- [How to configure a PolyPost.Resource](https://github.com/totemic-tools/poly_post_demo/blob/main/config/dev.exs#L84)
+- [How to map a PolyPost.Resource](https://github.com/totemic-tools/poly_post_demo/blob/main/lib/demo/article.ex)
+- [How to query the PolyPost.Depot](https://github.com/totemic-tools/poly_post_demo/blob/main/lib/demo/query.ex)
+- [How to route a PolyPost.Resource in Phoenix](https://github.com/totemic-tools/poly_post_demo/blob/main/lib/demo_web/router.ex)
+- [How to setup a controller to retrieve a single/list of PolyPost.Resource](https://github.com/totemic-tools/poly_post_demo/blob/main/lib/demo_web/controllers/articles_controller.ex)
