@@ -26,7 +26,7 @@ to build everything.
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser and see some test articles.
 
-## Things of Note
+## How To
 
 - [How to configure a PolyPost.Resource](https://github.com/totemic-tools/poly_post_demo/blob/main/config/dev.exs#L84)
 - [How to map a PolyPost.Resource](https://github.com/totemic-tools/poly_post_demo/blob/main/lib/demo/article.ex)
